@@ -1,0 +1,48 @@
+{
+  "name": "ulog",
+  "version": "1.0.0",
+  "description": "A web practice project.",
+  "main": "index.js",
+  "scripts": {
+	"build": "rollup -c && cp ./out/* ./htdocs/js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CongRen1998/ulog.git"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "CongRen1998",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CongRen1998/ulog/issues"
+  },
+  "homepage": "https://github.com/CongRen1998/ulog#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "rollup": "^0.56.5",
+    "rollup-plugin-babel": "^3.0.3"
+  }
+}
+"babel": {
+	"presets": [
+		[
+			"env",
+			{
+				"targets": {
+					"browsers": [
+						"last 2 versions"
+					]
+				},
+				"modules": false
+			}
+		]
+	],
+	"plugins": [
+		"external-helpers"
+	]
+}
